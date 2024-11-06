@@ -13,6 +13,8 @@ services:
 
   app:
     build: app
+    depends_on:
+	- "db" 
     environment:
       POSTGRES_DATABASE: dasha
       POSTGRES_USER: dasha
